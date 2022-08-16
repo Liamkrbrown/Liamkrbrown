@@ -1,0 +1,59 @@
+@import url("./normalize.css");
+
+:root { 
+    --red: #ED254E;
+    --yellow: #F9DC5C;
+    --off-white: #F4FFFD;
+    --navy: #011936;
+    --grey: #465352;
+}
+
+* { 
+    box-sizing: border-box;
+
+}
+
+body { 
+    background-color: var(--navy);
+}
+
+h1 { 
+    color: var(--yellow);
+}
+
+p { 
+    color: var(--off-white);
+}
+
+section { 
+    animation: fadeIn 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+
+/* --------- Typography ---------- */
+
+h1,
+h2,
+h3,
+h4 { 
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+p { 
+    font-family: 'Halant', serif;
+    line-height: 2rem;
+}
+
+
+/* --------- Animations ---------- */
+
+@keyframes fadeIn { 
+    0% { 
+        opacity: 0%;
+    }
+    100% { 
+        opacity: 100%;
+    }
+}

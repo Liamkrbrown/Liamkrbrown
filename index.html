@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Hammersmith+One&display=swap" rel="stylesheet">
+    <title>Liam Brown || Front End Developer</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-left">Liam Brown</h1>
+        <h1 class="header-right">Liam Brown</h1>
+    </header>
+    <div class="screen-wipe"></div>
+    <div class="screen-wipe2"></div>
+    <div class="screen-container">
+        <div class="pages-container">
+            <div class="page about" onmouseenter="slide('about')">
+                <div class="content">
+                    <div class="left">
+                        <img src="./resources/images/Me.jpeg" alt="self-portrait">
+                        <h2>About me</h2>
+                        <hr>
+                        <p>Front-end Developer with a passion for mobile-first accessible design Front-end Developer with a passion for mobile-first accessible design Front-end Developer with a passion for  bla bla bla bla bla mobile-first accessible design Front-end Developer  and other words that should be written here with a passion for mobile-first accessible design </p>
+                    </div>
+                    <div class="right">
+                        <h2>Tech Stack</h2>
+                        <div class="card-container">
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                        </div>
+                    </div>
+                </div>
+                <a><button class="hire-me" onclick="screenWipe()">Hire me!</button></a>
+            </div>
+            <div class="page projects" onmouseenter= "slide('projects')">
+                <div class="projects-content">
+                    <h1>Projects</h1>
+                    <div class="website-container">
+                        <div class="website-card"></div>
+                        <div class="website-card"></div>
+                        <div class="website-card"></div>
+                        <div class="website-card"></div>
+                    </div>
+                    <div class="description">
+                        <h2>Project #1</h2>
+                        <p>Weather app for a client created using weatherAPI, nextJS, React. Does this, also does that all some other things.</p>
+                    </div>
+                    <div>
+                        <a><button class="hire-me" onclick="screenWipe()">Hire me!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="switch">
+            <label class="page-switch" for="checkbox">
+                <input type="checkbox" id="checkbox"/>
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+    
+    <script src="slide.js"></script>
+</body>
+</html>
